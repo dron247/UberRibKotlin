@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Rib App</string>
+    <string name="intro_btn_close_label">close</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="hint_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="welcome_to_beeline">Welcome to My RIB app</string>
+</resources>
