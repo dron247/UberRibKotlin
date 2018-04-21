@@ -7,8 +7,6 @@ import com.uber.rib.core.EmptyPresenter
 import com.uber.rib.core.InteractorBaseComponent
 import dagger.BindsInstance
 import dagger.Provides
-import java.lang.annotation.Retention
-import java.lang.annotation.RetentionPolicy.CLASS
 import javax.inject.Qualifier
 import javax.inject.Scope
 
@@ -93,11 +91,11 @@ class LoggedOutBuilder(
     }
 
     @Scope
-    @Retention(CLASS)
+    @Retention(AnnotationRetention.BINARY)
     internal annotation class LoggedOutScope
 
 
     @Qualifier
-    @Retention(CLASS)
+    @Retention(AnnotationRetention.BINARY)
     internal annotation class LoggedOutInternal
 }

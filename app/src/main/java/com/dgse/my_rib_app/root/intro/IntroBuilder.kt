@@ -8,8 +8,6 @@ import com.uber.rib.core.ViewBuilder
 import dagger.Binds
 import dagger.BindsInstance
 import dagger.Provides
-import java.lang.annotation.Retention
-import java.lang.annotation.RetentionPolicy.CLASS
 import javax.inject.Qualifier
 import javax.inject.Scope
 
@@ -92,10 +90,10 @@ class IntroBuilder(
     }
 
     @Scope
-    @Retention(CLASS)
+    @Retention(AnnotationRetention.BINARY)
     internal annotation class IntroScope
 
     @Qualifier
-    @Retention(CLASS)
+    @Retention(AnnotationRetention.BINARY)
     internal annotation class IntroInternal
 }
